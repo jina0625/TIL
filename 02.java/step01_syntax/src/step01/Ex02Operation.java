@@ -44,6 +44,7 @@ public class Ex02Operation {
 		System.out.println(assign);
 		
 		// 참고 : 삼항연산 (조건)?식1:식2
+		//				조건식 결과값 true : 식1 반환 / false : 식2 반환
 		int i = -5;
 		int res = (i >= 0)?i : -i;
 		System.out.println(res);

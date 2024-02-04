@@ -1,0 +1,10 @@
+MVC 패턴 : 어플리케이션을 계층별로 구분하는 패턴
+		- 구조
+			1) M(Model) : 핵심 로직
+			2) V(View) : 출력 로직
+			3) C(Controller) : View와 Model 연결 로직
+			
+		-> 사용자가 Controller 사용시 Controller는 Model에게서 데이터 받아오고 받아온 데이터 통해 View에서 시각적인 부분 제어해 사용자에게 전달
+		1. 사용자 Request(요청)를 Controller가 받음
+		2. Controller는 Service에서 비즈니스 로직 처리 후 결과를 Model에 담음
+		3. Model에 저장된 결과 바탕으로 시각적 요소 출력 담당하는 View를 제어해 사용자에게 전달

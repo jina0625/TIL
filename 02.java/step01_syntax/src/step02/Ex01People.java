@@ -36,7 +36,7 @@ class People {
 		return age;
 	}
 	
-	// 일반 정보(name, age) 출력 메them
+	// 일반 정보(name, age) 출력 메소드
 	void printInfo () {
 		System.out.println(name + " " + age);
 	}

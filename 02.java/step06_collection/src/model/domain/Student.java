@@ -18,6 +18,7 @@ public class Student implements Comparable<Student>{
 	private int studentNo;
 	private String grade;
 	
+	
 	@Override
 	public int compareTo(Student student) {
 		if(student.getStudentNo() < this.getStudentNo()) {

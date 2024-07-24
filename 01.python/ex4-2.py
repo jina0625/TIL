@@ -145,6 +145,13 @@ while True :
     if name == "" :
         break
     number = int(input("개수 : "))
+#     if name in inventory :
+#         inventory[name] += number
+#     else :
+#         inventory[name] = number
+#     name = input("물건 이름 : ")
+# for k, v in sorted(inventory.items()) :
+#     print(k, v)
     if name in inventory.keys() :
         number += inventory[name]
     inventory[name] = number
@@ -153,3 +160,13 @@ print(inventory)
 print(sorted(inventory.items()))
 
 
+# v2
+inventory = {}
+product = input("물건이름 : ")
+while product != "" :
+    number = int(input("개수 : "))
+    stock = inventory.get(product, 0)
+    inventory[product] = stock + number
+    product = input("물건이름 : ")
+for k, v in sorted(inventory.items()) :
+    print(k, v)

@@ -133,3 +133,23 @@ set1.update(["딸기", "한라봉"])
 print(set1)
 set1.remove("오렌지")
 print(set1)
+
+
+# 편의점 재고관리
+# 엔터('')만 입력할 때까지 반복하여 사용자로부터 물건 이름과 개수 입력 받기
+# 물건 이름 존재하지 않으면 추가하고, 존재하면 물건 개수 더함
+inventory={}
+
+while True :
+    name = input("물건 이름 : ")
+    if name == "" :
+        break
+    number = int(input("개수 : "))
+    if name in inventory.keys() :
+        number += inventory[name]
+    inventory[name] = number
+print(inventory)
+# 입력 끝나면 재고 현황을 물건 이름 오름차순으로 정렬하여 출력
+print(sorted(inventory.items()))
+
+

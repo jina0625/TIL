@@ -17,12 +17,19 @@ public class JavaTest {
 		int[][] scoreArray = {{85, 70, 90, 95}, {80, 95, 90, 75}, {75, 85, 90, 80}};
 		System.out.println("학생들의 성적은 다음과 같습니다.");
 		for(int i = 0; i < scoreArray.length; i++) {
+			int sum = 0;
 			System.out.println(("학생" + (i + 1) + ": " ));
 			for(int j = 0; j < 4; j++) {
 				System.out.println(scoreArray[i][j] + "");
+				sum += scoreArray[i][j];
 			}
+			//System.out.println(sum);
+			double average = (double) sum / scoreArray[i].length;
+			//System.out.println(average);
+			System.out.println("평균:" + average);
 			System.out.println("");
 		}
+		System.out.println();
 		
 		
 	}

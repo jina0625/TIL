@@ -18,7 +18,4 @@ public class MainInterface {
 		mySavingAccount.addInterest(); // 이자 계산 및 추가
 		mySavingAccount.displayAccountInfoInterface();
 	}
-	
-
-
 }
